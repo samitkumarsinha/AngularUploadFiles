@@ -1,0 +1,14 @@
+<div>
+<h1>FormData (multipart/data-form)</h1>
+<div>
+    <form [formGroup] = "uploadForm" (ngSubmit)="submitForm()">
+      <div>
+        <!-- <input type="file"  name="files" (change)="onFileSelect($event)" /> -->
+        <input type="file" multiple name="files" (change)="onFileChange($event)" />
+      </div>
+      <div>
+        <button type="submit">Upload</button>
+      </div>
+    </form>
+  </div>
+</div>
